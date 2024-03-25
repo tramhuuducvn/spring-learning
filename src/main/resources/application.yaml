@@ -1,0 +1,7 @@
+spring:
+  application:
+    appName: ${APP_NAME:learning-spring}
+    author: ${AUTHOR:Tram Huu Duc}
+    old: ${OLD:22}
+server:
+  port: 8081

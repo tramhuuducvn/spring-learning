@@ -4,6 +4,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +19,7 @@ public class LearningSpringApplication implements CommandLineRunner {
 	}
 
 	@Autowired
+	@Qualifier("MyAsyncServiceImpl")
 	private AsyncService asyncService;
 
 	public void testAsyncAnnotationForMethodsWithReturnType()

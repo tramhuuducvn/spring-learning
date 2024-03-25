@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  my-spring-boot-app:
+    image: spring_app:latest
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    volumes:
+      - ./main/resources/application.yaml:/config/application.yaml
