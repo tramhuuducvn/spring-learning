@@ -3,7 +3,6 @@ package com.ductram.learningspring.service.implementation;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 

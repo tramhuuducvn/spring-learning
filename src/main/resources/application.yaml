@@ -5,3 +5,8 @@ spring:
     old: ${OLD:22}
 server:
   port: 8081
+
+github:
+  app-id: 1913873
+  installation-id: 84750629
+  private-key: classpath:private_pkcs8.pem
