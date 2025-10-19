@@ -1,7 +1,29 @@
 spring:
+  profiles:
+    active: reactive
   application:
     appName: ${APP_NAME:learning-spring}
     author: ${AUTHOR:Tram Huu Duc}
     old: ${OLD:22}
+  threads:
+    virtual:
+      enabled: true
 server:
   port: 8081
+---
+spring:
+  config:
+    activate:
+      on-profile: servlet
+  main:
+    web-application-type: servlet
+---
+spring:
+  config:
+    activate:
+      on-profile: reactive
+  main:
+    web-application-type: reactive
+
+
+
